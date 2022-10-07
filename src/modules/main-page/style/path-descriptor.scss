@@ -1,0 +1,74 @@
+@import '~@/common/style/colors';
+
+.path-descriptor {
+  min-width: 168px;
+  margin: 0 32px 0 28px;
+
+  .labels {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .point {
+      font-size: 10px;
+      line-height: 12px;
+      color: $nice-gray;
+    }
+
+    .travel-time {
+      line-height: 18px;
+    }
+  }
+
+  .line {
+    position: relative;
+    margin-top: 4px;
+    height: 1px;
+
+    .bg {
+      position: absolute;
+      width: 100%;
+      border-bottom: solid 1px $nice-gray;
+    }
+
+    .dots {
+      position: absolute;
+      top: -2px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .dot {
+        width: 5px;
+        height: 5px;
+        background-color: white;
+        box-sizing: border-box;
+        border: solid 1px $nice-gray;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .stops {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .stop {
+      margin-top: 4px;
+      color: $nice-orange;
+    }
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .path-descriptor {
+    order: 2;
+    width: 100%;
+    margin: 32px 0 0;
+
+    .line {
+      margin: 22px 0 18px;
+    }
+  }
+}

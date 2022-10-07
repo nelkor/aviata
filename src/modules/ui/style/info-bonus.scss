@@ -1,0 +1,26 @@
+@import '~@/common/style/colors';
+
+.info-bonus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.05))
+    drop-shadow(0 3px 6px rgba(0, 0, 0, 0.1));
+
+  .text-field {
+    background-color: white;
+    padding: 12px;
+    border-radius: 6px;
+    white-space: nowrap;
+    border: solid 1px $middle-gray;
+  }
+
+  .helper-angle {
+    background-color: white;
+    width: 14px;
+    height: 14px;
+    transform: translateY(-8px) rotate(45deg);
+    border-right: solid 1px $middle-gray;
+    border-bottom: solid 1px $middle-gray;
+  }
+}

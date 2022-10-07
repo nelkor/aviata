@@ -1,0 +1,20 @@
+@import '~@/common/style/fonts';
+@import '~@/common/style/typography';
+@import '~@/common/style/colors';
+@import '~@/common/style/scrollbar';
+@import '~@/pop-up/index';
+
+html,
+button {
+  font-family: OpenSans, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $deep-dark;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $middle-gray;
+  overflow-y: scroll;
+}

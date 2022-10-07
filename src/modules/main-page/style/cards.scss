@@ -1,0 +1,36 @@
+.cards-list {
+  width: 880px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flight-card {
+  display: flex;
+  width: 100%;
+  max-width: 880px;
+  height: 168px;
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 1200px) {
+  .cards-list {
+    width: 100%;
+  }
+
+  .flight-card {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .flight-card {
+    max-width: 540px;
+    flex-direction: column;
+    height: auto;
+  }
+}

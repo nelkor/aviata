@@ -1,0 +1,65 @@
+@import '~@/common/style/colors';
+
+.app-button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: 200ms;
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.6;
+  }
+}
+
+.primary-button {
+  width: 200px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: white;
+  background-color: $nice-green;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: $light-green;
+  }
+
+  &:active {
+    background-color: $dark-green;
+    color: $middle-gray;
+  }
+}
+
+.secondary-button {
+  padding: 0 8px;
+  height: 24px;
+  font-weight: 600;
+  color: $nice-blue;
+  background-color: $light-blue;
+  border-radius: 2px;
+
+  &:hover {
+    color: $button-blue;
+  }
+
+  &:active {
+    color: $dark-blue;
+  }
+}
+
+.text-button {
+  height: 20px;
+  color: $button-blue;
+  background-color: transparent;
+  border-bottom: 1px dashed $border-blue;
+
+  &:hover {
+    color: $nice-blue;
+  }
+
+  &:active {
+    color: $dark-blue;
+  }
+}

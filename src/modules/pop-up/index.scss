@@ -1,0 +1,28 @@
+.popup-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 150;
+
+  .popup {
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.16);
+    background-color: white;
+    box-sizing: border-box;
+    max-width: 420px;
+  }
+
+  &.close {
+    opacity: 0;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,56 @@
+@import '~@/common/style/colors';
+
+.filters-aside {
+  width: 240px;
+  position: sticky;
+  height: min-content;
+  top: 50px;
+
+  .reset-all-filters {
+    margin-bottom: 12px;
+  }
+}
+
+.side-filter {
+  background-color: $filter-gray;
+  border-radius: 4px;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+
+  .head {
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .filter-scroll-area {
+    max-height: 256px;
+    overflow-y: auto;
+  }
+
+  .item {
+    height: 32px;
+
+    label {
+      padding: 0 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .filters-aside {
+    width: 100%;
+    max-width: 880px;
+    position: static;
+
+    .reset-all-filters {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .filters-aside {
+    max-width: 540px;
+  }
+}

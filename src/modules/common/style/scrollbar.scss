@@ -1,0 +1,25 @@
+@import '~@/common/style/colors';
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $nice-gray;
+  border: 4px solid transparent;
+  background-clip: padding-box;
+  border-radius: 999px;
+}
+
+.filter-scroll-area {
+  &::-webkit-scrollbar {
+    width: 11px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $middle-gray;
+    border: 4px solid transparent;
+    background-clip: padding-box;
+    border-radius: 999px;
+  }
+}

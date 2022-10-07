@@ -1,0 +1,21 @@
+{
+  "ts-node": {
+    "require": ["tsconfig-paths/register"],
+    "transpileOnly": true
+  },
+  "compilerOptions": {
+    "strict": true,
+    "target": "esnext",
+    "lib": ["esnext", "dom"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "typeRoots": ["node_modules/@types", "index.d.ts"],
+    "baseUrl": "src",
+    "paths": {
+      "@src/*": ["./*"],
+      "@/*": ["./modules/*"]
+    }
+  }
+}

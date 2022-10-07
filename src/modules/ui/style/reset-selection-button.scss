@@ -1,0 +1,49 @@
+@import '~@/common/style/colors';
+
+.reset-selection-button {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .info-bonus {
+    position: absolute;
+    bottom: 26px;
+    pointer-events: none;
+    opacity: 0;
+    transition: 200ms;
+  }
+
+  button {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    svg {
+      fill: $nice-gray;
+    }
+  }
+
+  &:hover {
+    svg {
+      fill: $button-blue;
+    }
+
+    .info-bonus {
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .reset-selection-button {
+    .info-bonus {
+      display: none;
+    }
+  }
+}

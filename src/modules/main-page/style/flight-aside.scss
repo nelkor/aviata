@@ -1,0 +1,48 @@
+@import '~@/common/style/colors';
+
+.flight-aside {
+  width: 240px;
+  background-color: $filter-gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .price-tag {
+    margin: 12px 0;
+  }
+
+  .total {
+    color: $dark-light;
+    margin: 8px 0 12px;
+  }
+
+  .luggage {
+    display: flex;
+    align-items: center;
+  }
+
+  .luggage-text {
+    display: block;
+    text-align: center;
+    min-width: 66px;
+    margin-right: 6px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .flight-aside {
+    width: 100%;
+
+    .price-tag {
+      margin: 17px 0 14px;
+    }
+
+    .total {
+      margin: 14px 0 16px;
+    }
+
+    .luggage {
+      display: none;
+    }
+  }
+}

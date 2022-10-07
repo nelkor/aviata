@@ -1,0 +1,46 @@
+@import '~@/common/style/colors';
+
+label.check-box {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  input[type='checkbox'] {
+    position: absolute;
+    opacity: 0;
+  }
+
+  .visible-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+    background-color: white;
+    border: solid 1px $nice-gray;
+    border-radius: 2px;
+
+    &.checked {
+      background-color: $nice-green;
+      border-color: $nice-green;
+
+      svg {
+        fill: white;
+      }
+    }
+  }
+
+  &.focus {
+    background-color: $filter-hover;
+
+    svg {
+      fill: $nice-gray;
+    }
+  }
+}

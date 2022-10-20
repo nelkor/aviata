@@ -25,22 +25,19 @@ label.check-box {
     background-color: white;
     border: solid 1px $nice-gray;
     border-radius: 2px;
+    color: white;
 
     &.checked {
       background-color: $nice-green;
       border-color: $nice-green;
-
-      svg {
-        fill: white;
-      }
     }
   }
 
   &.focus {
     background-color: $filter-hover;
 
-    svg {
-      fill: $nice-gray;
+    .visible-box:not(.checked) {
+      color: $nice-gray;
     }
   }
 }

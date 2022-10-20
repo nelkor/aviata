@@ -162,13 +162,5 @@
     "vue/no-empty-component-block": 2,
     "vue/max-attributes-per-line": 0,
     "vue/singleline-html-element-content-newline": 0
-  },
-  "overrides": [
-    {
-      "files": ["src/modules/ui/icons/**"],
-      "rules": {
-        "max-len": 0
-      }
-    }
-  ]
+  }
 }

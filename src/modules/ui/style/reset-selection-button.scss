@@ -23,15 +23,12 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-
-    svg {
-      fill: $nice-gray;
-    }
+    color: $nice-gray;
   }
 
   &:hover {
-    svg {
-      fill: $button-blue;
+    button {
+      color: $button-blue;
     }
 
     .info-bonus {
